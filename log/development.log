@@ -2,3 +2,193 @@
   [1m[35m (0.0ms)[0m  select sqlite_version(*)
   [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Started GET "/articles" for 127.0.0.1 at 2020-05-03 14:06:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.7.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.7.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/home/eyeceman/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/eyeceman/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/eyeceman/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.2ms)
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (158.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from __home_eyeceman__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__2007077309238680042_70368170141980 at /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (126.5ms)
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eyeceman/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (281.2ms)
+  [1m[35m (21.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20200503175930)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200503175930"]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-03 18:07:07.501359"], ["updated_at", "2020-05-03 18:07:07.501359"]]
+  [1m[35m (14.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/articles" for 127.0.0.1 at 2020-05-03 14:07:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4902ms (Views: 4856.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-05-03 14:08:17 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2020-05-03 14:16:25 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (111.3ms)
+  Rendered articles/new.html.erb within layouts/application (115.7ms)
+Completed 200 OK in 163ms (Views: 148.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2020-05-03 14:16:42 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Vir3cFGHdZ/5srwRYk/fGB3mSn7yyrpE9+hdXSWa9rZ0r+u3hlXGzVSdHUZNBiEjW9R86ODb/nJ2PMaz5tuxw==", "article"=>{"title"=>"new art", "body"=>"looks "}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (30.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "new art"], ["body", "looks "], ["created_at", "2020-05-03 18:16:42.752918"], ["updated_at", "2020-05-03 18:16:42.752918"]]
+  [1m[35m (46.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 80ms (ActiveRecord: 77.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2020-05-03 14:16:42 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 77ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2020-05-03 14:16:47 -0400
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.6ms)
+  Rendered articles/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2020-05-03 14:16:52 -0400
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y0sBkaoB5K5jJU40cceWJ0xbl7SxoVAC9n4pSKo0/HLvwRXitV6uYymR8LEterHfoUNfbunpFRIseXsnETn5bw==", "article"=>{"title"=>"new art", "body"=>"looks z"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (67.7ms)[0m  [1m[33mUPDATE "articles" SET "body" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["body", "looks z"], ["updated_at", "2020-05-03 18:16:52.070458"], ["id", 1]]
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 89ms (ActiveRecord: 82.8ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2020-05-03 14:16:52 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 65ms (Views: 60.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-05-03 14:16:56 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2020-05-03 14:17:12 -0400
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I2/4Nzbmg0lpNE3w+oR4jF4zdQdExZksxmO+URbtlHMH5exEKbnJhCOA83WmOV90syu93RyN3DwcZOw+reCRbg==", "id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (30.9ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 1]]
+  [1m[35m (35.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 70ms (ActiveRecord: 67.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-05-03 14:17:12 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2020-05-03 14:17:15 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.7ms)
+  Rendered articles/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
